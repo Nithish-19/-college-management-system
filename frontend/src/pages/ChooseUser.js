@@ -8,20 +8,19 @@ import {
   CircularProgress,
   Backdrop,
 } from '@mui/material';
-import { AccountCircle, College, Group } from '@mui/icons-material';
+import { School } from '@mui/icons-material'; // Corrected import for the School icon
+import { AccountCircle, Group } from '@mui/icons-material'; // Removed College, since it's not a valid icon
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../redux/userRelated/userHandle';
 import Popup from '../components/Popup';
-
-
 
 const ChooseUser = ({ visitor }) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const password = "zxc"
 
-  const { status, currentUser, currentRole } = useSelector(state => state.user);;
+  const { status, currentUser, currentRole } = useSelector(state => state.user);
 
   const [loader, setLoader] = useState(false)
   const [showPopup, setShowPopup] = useState(false);
@@ -105,7 +104,7 @@ const ChooseUser = ({ visitor }) => {
             <StyledPaper elevation={3}>
               <div onClick={() => navigateHandler("Student")}>
                 <Box mb={2}>
-                  <College fontSize="large" />
+                  <School fontSize="large" /> {/* Corrected the icon */}
                 </Box>
                 <StyledTypography>
                   Student
