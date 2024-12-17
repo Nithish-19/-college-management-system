@@ -5,7 +5,7 @@ const sclassSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    school: {
+    College: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'
     },

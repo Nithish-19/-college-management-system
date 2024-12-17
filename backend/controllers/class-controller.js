@@ -7,12 +7,12 @@ const sclassCreate = async (req, res) => {
     try {
         const sclass = new Sclass({
             sclassName: req.body.sclassName,
-            school: req.body.adminID
+            College: req.body.adminID
         });
 
         const existingSclassByName = await Sclass.findOne({
             sclassName: req.body.sclassName,
-            school: req.body.adminID
+            College: req.body.adminID
         });
 
         if (existingSclassByName) {
@@ -29,7 +29,7 @@ const sclassCreate = async (req, res) => {
 
 const sclassList = async (req, res) => {
     try {
-        let sclasses = await Sclass.find({ school: req.params.id })
+        let sclasses = await Sclass.find({ College: req.params.id })
         if (sclasses.length > 0) {
             res.send(sclasses)
         } else {
@@ -44,7 +44,7 @@ const getSclassDetail = async (req, res) => {
     try {
         let sclass = await Sclass.findById(req.params.id);
         if (sclass) {
-            sclass = await sclass.populate("school", "schoolName")
+            sclass = await sclass.populate("College", "CollegeName")
             res.send(sclass);
         }
         else {
@@ -88,13 +88,13 @@ const deleteSclass = async (req, res) => {
 
 const deleteSclasses = async (req, res) => {
     try {
-        const deletedClasses = await Sclass.deleteMany({ school: req.params.id });
+        const deletedClasses = await Sclass.deleteMany({ College: req.params.id });
         if (deletedClasses.deletedCount === 0) {
             return res.send({ message: "No classes found to delete" });
         }
-        const deletedStudents = await Student.deleteMany({ school: req.params.id });
-        const deletedSubjects = await Subject.deleteMany({ school: req.params.id });
-        const deletedTeachers = await Teacher.deleteMany({ school: req.params.id });
+        const deletedStudents = await Student.deleteMany({ College: req.params.id });
+        const deletedSubjects = await Subject.deleteMany({ College: req.params.id });
+        const deletedTeachers = await Teacher.deleteMany({ College: req.params.id });
         res.send(deletedClasses);
     } catch (error) {
         res.status(500).json(error);

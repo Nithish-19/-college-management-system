@@ -18,13 +18,13 @@ const Complain = require('../models/complainSchema.js');
 //         });
 
 //         const existingAdminByEmail = await Admin.findOne({ email: req.body.email });
-//         const existingSchool = await Admin.findOne({ schoolName: req.body.schoolName });
+//         const existingCollege = await Admin.findOne({ CollegeName: req.body.CollegeName });
 
 //         if (existingAdminByEmail) {
 //             res.send({ message: 'Email already exists' });
 //         }
-//         else if (existingSchool) {
-//             res.send({ message: 'School name already exists' });
+//         else if (existingCollege) {
+//             res.send({ message: 'College name already exists' });
 //         }
 //         else {
 //             let result = await admin.save();
@@ -62,13 +62,13 @@ const adminRegister = async (req, res) => {
         });
 
         const existingAdminByEmail = await Admin.findOne({ email: req.body.email });
-        const existingSchool = await Admin.findOne({ schoolName: req.body.schoolName });
+        const existingCollege = await Admin.findOne({ CollegeName: req.body.CollegeName });
 
         if (existingAdminByEmail) {
             res.send({ message: 'Email already exists' });
         }
-        else if (existingSchool) {
-            res.send({ message: 'School name already exists' });
+        else if (existingCollege) {
+            res.send({ message: 'College name already exists' });
         }
         else {
             let result = await admin.save();
@@ -117,12 +117,12 @@ const getAdminDetail = async (req, res) => {
 //     try {
 //         const result = await Admin.findByIdAndDelete(req.params.id)
 
-//         await Sclass.deleteMany({ school: req.params.id });
-//         await Student.deleteMany({ school: req.params.id });
-//         await Teacher.deleteMany({ school: req.params.id });
-//         await Subject.deleteMany({ school: req.params.id });
-//         await Notice.deleteMany({ school: req.params.id });
-//         await Complain.deleteMany({ school: req.params.id });
+//         await Sclass.deleteMany({ College: req.params.id });
+//         await Student.deleteMany({ College: req.params.id });
+//         await Teacher.deleteMany({ College: req.params.id });
+//         await Subject.deleteMany({ College: req.params.id });
+//         await Notice.deleteMany({ College: req.params.id });
+//         await Complain.deleteMany({ College: req.params.id });
 
 //         res.send(result)
 //     } catch (error) {

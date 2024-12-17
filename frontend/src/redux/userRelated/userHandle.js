@@ -37,10 +37,10 @@ export const registerUser = (fields, role) => async (dispatch) => {
         const result = await axios.post(`${process.env.REACT_APP_BASE_URL}/${role}Reg`, fields, {
             headers: { 'Content-Type': 'application/json' },
         });
-        if (result.data.schoolName) {
+        if (result.data.CollegeName) {
             dispatch(authSuccess(result.data));
         }
-        else if (result.data.school) {
+        else if (result.data.College) {
             dispatch(stuffAdded());
         }
         else {
@@ -96,7 +96,7 @@ export const updateUser = (fields, id, address) => async (dispatch) => {
         const result = await axios.put(`${process.env.REACT_APP_BASE_URL}/${address}/${id}`, fields, {
             headers: { 'Content-Type': 'application/json' },
         });
-        if (result.data.schoolName) {
+        if (result.data.CollegeName) {
             dispatch(authSuccess(result.data));
         }
         else {

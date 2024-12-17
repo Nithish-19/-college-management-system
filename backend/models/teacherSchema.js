@@ -18,7 +18,7 @@ const teacherSchema = new mongoose.Schema({
         type: String,
         default: "Teacher"
     },
-    school: {
+    College: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin',
         required: true,

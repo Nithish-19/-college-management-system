@@ -13,7 +13,7 @@ const noticeSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
-    school: {
+    College: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'
     },

@@ -48,5 +48,7 @@
   },
   "devDependencies": {
     "webpack": "^5.81.0"
-  }
+  
+}, 
+ "homepage": "https://Nithish-19.github.io/-college-management-system/"
 }

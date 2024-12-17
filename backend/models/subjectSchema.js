@@ -18,7 +18,7 @@ const subjectSchema = new mongoose.Schema({
         ref: 'sclass',
         required: true,
     },
-    school: {
+    College: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'
     },

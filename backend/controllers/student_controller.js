@@ -9,7 +9,7 @@ const studentRegister = async (req, res) => {
 
         const existingStudent = await Student.findOne({
             rollNum: req.body.rollNum,
-            school: req.body.adminID,
+            College: req.body.adminID,
             sclassName: req.body.sclassName,
         });
 
@@ -19,7 +19,7 @@ const studentRegister = async (req, res) => {
         else {
             const student = new Student({
                 ...req.body,
-                school: req.body.adminID,
+                College: req.body.adminID,
                 password: hashedPass
             });
 
@@ -39,7 +39,7 @@ const studentLogIn = async (req, res) => {
         if (student) {
             const validated = await bcrypt.compare(req.body.password, student.password);
             if (validated) {
-                student = await student.populate("school", "schoolName")
+                student = await student.populate("College", "CollegeName")
                 student = await student.populate("sclassName", "sclassName")
                 student.password = undefined;
                 student.examResult = undefined;
@@ -58,7 +58,7 @@ const studentLogIn = async (req, res) => {
 
 const getStudents = async (req, res) => {
     try {
-        let students = await Student.find({ school: req.params.id }).populate("sclassName", "sclassName");
+        let students = await Student.find({ College: req.params.id }).populate("sclassName", "sclassName");
         if (students.length > 0) {
             let modifiedStudents = students.map((student) => {
                 return { ...student._doc, password: undefined };
@@ -75,7 +75,7 @@ const getStudents = async (req, res) => {
 const getStudentDetail = async (req, res) => {
     try {
         let student = await Student.findById(req.params.id)
-            .populate("school", "schoolName")
+            .populate("College", "CollegeName")
             .populate("sclassName", "sclassName")
             .populate("examResult.subName", "subName")
             .populate("attendance.subName", "subName sessions");
@@ -102,7 +102,7 @@ const deleteStudent = async (req, res) => {
 
 const deleteStudents = async (req, res) => {
     try {
-        const result = await Student.deleteMany({ school: req.params.id })
+        const result = await Student.deleteMany({ College: req.params.id })
         if (result.deletedCount === 0) {
             res.send({ message: "No students found to delete" })
         } else {
@@ -225,11 +225,11 @@ const clearAllStudentsAttendanceBySubject = async (req, res) => {
 };
 
 const clearAllStudentsAttendance = async (req, res) => {
-    const schoolId = req.params.id
+    const CollegeId = req.params.id
 
     try {
         const result = await Student.updateMany(
-            { school: schoolId },
+            { College: CollegeId },
             { $set: { attendance: [] } }
         );
 

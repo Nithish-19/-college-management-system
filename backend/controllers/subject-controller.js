@@ -12,7 +12,7 @@ const subjectCreate = async (req, res) => {
 
         const existingSubjectBySubCode = await Subject.findOne({
             'subjects.subCode': subjects[0].subCode,
-            school: req.body.adminID,
+            College: req.body.adminID,
         });
 
         if (existingSubjectBySubCode) {
@@ -21,7 +21,7 @@ const subjectCreate = async (req, res) => {
             const newSubjects = subjects.map((subject) => ({
                 ...subject,
                 sclassName: req.body.sclassName,
-                school: req.body.adminID,
+                College: req.body.adminID,
             }));
 
             const result = await Subject.insertMany(newSubjects);
@@ -34,7 +34,7 @@ const subjectCreate = async (req, res) => {
 
 const allSubjects = async (req, res) => {
     try {
-        let subjects = await Subject.find({ school: req.params.id })
+        let subjects = await Subject.find({ College: req.params.id })
             .populate("sclassName", "sclassName")
         if (subjects.length > 0) {
             res.send(subjects)
@@ -118,7 +118,7 @@ const deleteSubject = async (req, res) => {
 
 const deleteSubjects = async (req, res) => {
     try {
-        const deletedSubjects = await Subject.deleteMany({ school: req.params.id });
+        const deletedSubjects = await Subject.deleteMany({ College: req.params.id });
 
         // Set the teachSubject field to null in teachers
         await Teacher.updateMany(
