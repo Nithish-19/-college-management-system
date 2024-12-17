@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
     SCHOOL MANAGEMENT SYSTEM
 </h1>
@@ -84,3 +85,7 @@ So you have to do this in the frontend. After this the project will run smoothly
 
 AUTHOR - [JaganJavid] - [Instagram - @codejavid]
 
+=======
+# -college-management-system
+The College Management System is a comprehensive web application designed to streamline college management tasks including student records, faculty data, course scheduling, class organization, and communication between students, teachers, and administrators
+>>>>>>> 9cb422225a96442b7a8d3cf53c20098baa4ef715
