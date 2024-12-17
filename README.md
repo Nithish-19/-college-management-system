@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 <h1 align="center">
-    College MANAGEMENT SYSTEM
+    SCHOOL MANAGEMENT SYSTEM
 </h1>
 
 <h3 align="center">
@@ -12,11 +11,10 @@ Access records, view marks, and communicate effortlessly.
 <br>
 
 <br><br>
-[IG](codeJavid)
 
 # About
 
-The College Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline College management, class organization, and facilitate communication between students, teachers, and administrators.
+The School Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline school management, class organization, and facilitate communication between students, teachers, and administrators.
 
 ## Features
 
@@ -83,9 +81,5 @@ So you have to do this in the frontend. After this the project will run smoothly
 
 <br>
 
-AUTHOR - [JaganJavid] - [Instagram - @codejavid]
 
-=======
-# -college-management-system
-The College Management System is a comprehensive web application designed to streamline college management tasks including student records, faculty data, course scheduling, class organization, and communication between students, teachers, and administrators
->>>>>>> 9cb422225a96442b7a8d3cf53c20098baa4ef715
+
