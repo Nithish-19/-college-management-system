@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3d4db46.css",
-    "main.js": "/static/js/main.1901c710.js",
-    "static/media/students.jpg": "/static/media/students.592d52e9a4e152e1ef38.jpg",
-    "static/media/subjects.svg": "/static/media/subjects.ef81f0bbea2b9a3231edcf49d00d7ad5.svg",
-    "static/media/assignment.svg": "/static/media/assignment.4def021ac61723cb0479c69bf8efa1ab.svg",
-    "static/media/classroom.png": "/static/media/classroom.f472ff2cd754d14669f3.png",
-    "static/media/time.svg": "/static/media/time.0e9d36f6356c032a523d5cc2fb081da2.svg",
-    "static/media/designlogin.jpg": "/static/media/designlogin.3cac939f195a9e698ba4.jpg",
-    "index.html": "/index.html",
-    "main.a3d4db46.css.map": "/static/css/main.a3d4db46.css.map",
-    "main.1901c710.js.map": "/static/js/main.1901c710.js.map"
+    "main.css": "/-college-management-system/static/css/main.a3d4db46.css",
+    "main.js": "/-college-management-system/static/js/main.3f532719.js",
+    "static/media/students.jpg": "/-college-management-system/static/media/students.592d52e9a4e152e1ef38.jpg",
+    "static/media/subjects.svg": "/-college-management-system/static/media/subjects.ef81f0bbea2b9a3231edcf49d00d7ad5.svg",
+    "static/media/assignment.svg": "/-college-management-system/static/media/assignment.4def021ac61723cb0479c69bf8efa1ab.svg",
+    "static/media/classroom.png": "/-college-management-system/static/media/classroom.f472ff2cd754d14669f3.png",
+    "static/media/time.svg": "/-college-management-system/static/media/time.0e9d36f6356c032a523d5cc2fb081da2.svg",
+    "static/media/designlogin.jpg": "/-college-management-system/static/media/designlogin.3cac939f195a9e698ba4.jpg",
+    "index.html": "/-college-management-system/index.html",
+    "main.a3d4db46.css.map": "/-college-management-system/static/css/main.a3d4db46.css.map",
+    "main.3f532719.js.map": "/-college-management-system/static/js/main.3f532719.js.map"
   },
   "entrypoints": [
     "static/css/main.a3d4db46.css",
-    "static/js/main.1901c710.js"
+    "static/js/main.3f532719.js"
   ]
 }
