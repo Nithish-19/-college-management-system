@@ -1039,7 +1039,7 @@
     "@babel/plugin-transform-modules-commonjs" "^7.25.9"
     "@babel/plugin-transform-typescript" "^7.25.9"
 
-"@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.9", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.16.3", "@babel/runtime@^7.18.3", "@babel/runtime@^7.23.9", "@babel/runtime@^7.26.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.26.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.0.tgz#8600c2f595f277c60815256418b85356a65173c1"
   integrity sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==
@@ -1688,12 +1688,12 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.16.11.tgz#0295ae13eeb449a87939fadf029e3382b0b9a802"
   integrity sha512-2eVDGg9OvIXNRmfDUQyKYH+jNcjdv1JkCH5F2YDgUye5fMX5nxGiYHAUe1BXaXyDMaLSwXC7LRksEKMiIQsFdw==
 
-"@mui/icons-material@^5.11.16":
-  version "5.16.11"
-  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.16.11.tgz#5f3640ad59b4af0da0f385e42c2b381c87baad7f"
-  integrity sha512-LjIiDVGGPzessDd5uSGFYZNqrXqECLiJ9hESE6Xkk8CtGTN2m2h6iImKJpkoryNXYxulv87WLeqfTMWAfA4Igg==
+"@mui/icons-material@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.2.0.tgz#8815b7b064234f525a174dd8bc59eb2f8986e79b"
+  integrity sha512-WR1EEhGOSvxAsoTSzWZBlrWFjul8wziDrII4rC3PvMBHhBYBqEc2n/0aamfFbwkH5EiYb96aqc6kYY6tB310Sw==
   dependencies:
-    "@babel/runtime" "^7.23.9"
+    "@babel/runtime" "^7.26.0"
 
 "@mui/lab@^5.0.0-alpha.131":
   version "5.0.0-alpha.174"
