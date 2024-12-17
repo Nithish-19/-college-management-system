@@ -83,7 +83,7 @@ So you have to do this in the frontend. After this the project will run smoothly
 
 <br>
 
-AUTHOR - [JaganJavid] - [Instagram - @codejavid]
+
 
 =======
 # -college-management-system
